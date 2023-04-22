@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const CircleAvatar(
                   backgroundImage: NetworkImage(avatar),
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Card(
+                  margin: const EdgeInsets.only(bottom: 16),
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: const [
                         Text('Paulo Rodriguez'),
@@ -34,6 +36,25 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'images/facebook.png',
+                      height: 32,
+                    ),
+                    const SizedBox(width: 8),
+                    Image.asset(
+                      'images/instagram.png',
+                      height: 32,
+                    ),
+                    const SizedBox(width: 8),
+                    Image.asset(
+                      'images/twitter.png',
+                      height: 32,
+                    ),
+                  ],
+                )
               ],
             ),
           ),
