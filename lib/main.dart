@@ -9,6 +9,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const avatar = 'https://picsum.photos/600';
+
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.indigo,
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 const CircleAvatar(
-                  backgroundImage: NetworkImage('https://picsum.photos/600'),
+                  backgroundImage: NetworkImage(avatar),
                   radius: 80,
                 ),
                 const SizedBox(height: 24),
