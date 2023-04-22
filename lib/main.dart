@@ -9,10 +9,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    const avatar = 'https://picsum.photos/600';
+
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello'),
+        backgroundColor: Colors.indigo,
+        body: SafeArea(
+          child: Center(
+            child: Column(
+              children: [
+                const CircleAvatar(
+                  backgroundImage: NetworkImage(avatar),
+                  radius: 80,
+                ),
+                const SizedBox(height: 24),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      children: const [
+                        Text('Paulo Rodriguez'),
+                        Icon(Icons.flutter_dash),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
