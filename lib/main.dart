@@ -24,12 +24,12 @@ class MyApp extends StatelessWidget {
                   radius: 80,
                 ),
                 const SizedBox(height: 24),
-                Card(
-                  margin: const EdgeInsets.only(bottom: 16),
+                const Card(
+                  margin: EdgeInsets.only(bottom: 16),
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: Column(
-                      children: const [
+                      children: [
                         Text('Paulo Rodriguez'),
                         Icon(Icons.flutter_dash),
                       ],
